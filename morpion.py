@@ -38,10 +38,10 @@ class TicTacToe:
             #Vérification du tour, et en fonction , X ou O
             if self.tour % 2 == 0:
                 self.boutons[i][j].config(text="X")
-                joueur = "Joueur 1"
+                joueur = "Joueur 2"
             else:
                 self.boutons[i][j].config(text="O")
-                joueur = "Joueur 2" if self.adversaire == "robot" else "Joueur 2"
+                joueur = "Joueur 1" if self.adversaire == "robot" else "Joueur 1"
             #Indentation du tour
             self.tour += 1
             #Vérification de la victoire / match nul 

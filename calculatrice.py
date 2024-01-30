@@ -8,7 +8,7 @@ def evaluer_expression(expression):
 
 def est_caractere_valide(caractere):
     # Vérifier si le caractère est un chiffre, une opération ou un espace
-    chiffres_et_operations = "0123456789+-/.*"
+    chiffres_et_operations = "0123456789+-/.* "
     return caractere in chiffres_et_operations
 
 while True:
