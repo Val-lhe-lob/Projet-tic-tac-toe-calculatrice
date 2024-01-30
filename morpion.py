@@ -149,6 +149,7 @@ class TicTacToe:
     def main(self):
 
         choix_adversaire = messagebox.askquestion("Choix de l'adversaire", "Voulez-vous jouer contre un robot ?", icon='question')
+        #En fonction de la réponse, détermination de l'adversaire
         self.adversaire = "robot" if choix_adversaire == "yes" else "humain"
 
         style = ttk.Style()
